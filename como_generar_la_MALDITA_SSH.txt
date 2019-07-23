@@ -1,0 +1,178 @@
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git remote add origin git@github.com:german1582/Repo_PrimGer.git
+fatal: remote origin already exists.
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git push -u origin git@github.com:german1582/Repo_PrimGer.git
+error: src refspec git@github.com does not match any
+error: failed to push some refs to 'git@github.com:german1582/Repo_PrimGer.git'
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git push -u origin master
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.114.4' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh -vT git@github.com
+OpenSSH_8.0p1, OpenSSL 1.1.1c  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Connecting to github.com [192.30.253.113] port 22.
+debug1: Connection established.
+debug1: identity file /c/Users/German/.ssh/id_rsa type -1
+debug1: identity file /c/Users/German/.ssh/id_rsa-cert type -1
+debug1: identity file /c/Users/German/.ssh/id_dsa type -1
+debug1: identity file /c/Users/German/.ssh/id_dsa-cert type -1
+debug1: identity file /c/Users/German/.ssh/id_ecdsa type -1
+debug1: identity file /c/Users/German/.ssh/id_ecdsa-cert type -1
+debug1: identity file /c/Users/German/.ssh/id_ed25519 type -1
+debug1: identity file /c/Users/German/.ssh/id_ed25519-cert type -1
+debug1: identity file /c/Users/German/.ssh/id_xmss type -1
+debug1: identity file /c/Users/German/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.0
+debug1: Remote protocol version 2.0, remote software version babeld-65a822fd
+debug1: no match: babeld-65a822fd
+debug1: Authenticating to github.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: rsa-sha2-512
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+debug1: Host 'github.com' is known and matches the RSA host key.
+debug1: Found key in /c/Users/German/.ssh/known_hosts:3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: Will attempt key: /c/Users/German/.ssh/id_rsa
+debug1: Will attempt key: /c/Users/German/.ssh/id_dsa
+debug1: Will attempt key: /c/Users/German/.ssh/id_ecdsa
+debug1: Will attempt key: /c/Users/German/.ssh/id_ed25519
+debug1: Will attempt key: /c/Users/German/.ssh/id_xmss
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,rsa-sha2-512,rsa-sha2-256,ssh-dss>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Trying private key: /c/Users/German/.ssh/id_rsa
+debug1: Trying private key: /c/Users/German/.ssh/id_dsa
+debug1: Trying private key: /c/Users/German/.ssh/id_ecdsa
+debug1: Trying private key: /c/Users/German/.ssh/id_ed25519
+debug1: Trying private key: /c/Users/German/.ssh/id_xmss
+debug1: No more authentication methods to try.
+git@github.com: Permission denied (publickey).
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh -T -p 443 git@ssh.github.com
+The authenticity of host '[ssh.github.com]:443 ([192.30.253.122]:443)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[ssh.github.com]:443,[192.30.253.122]:443' (RSA) to the list of known hosts.
+git@ssh.github.com: Permission denied (publickey).
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git remote -v
+origin  git@github.com:german1582/Repo_PrimGer.git (fetch)
+origin  git@github.com:german1582/Repo_PrimGer.git (push)
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ $ git config --global user.name "Ger"
+bash: $: command not found
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git config --global user.name "Ger"
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ sh -T ger@github.com
+sh: ger@github.com: No such file or directory
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ sh -T german1585@github.com
+sh: german1585@github.com: No such file or directory
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 787
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh-add -l
+The agent has no identities.
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh-keygen -t rsa -b 4096 -C "german.larcher@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/German/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/German/.ssh/id_rsa.
+Your public key has been saved in /c/Users/German/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:UnCcSn8bQb3YZ2fuoHKo+qL6i52dU5yYT7qulvXL9Ls german.larcher@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|      ...o..     |
+|      .oo . .    |
+|     . o.  + .   |
+|      ... + o o o|
+|      .+So o o + |
+|      +.= .   . .|
+|     o *.  . . o |
+|   ooo++o.o o   .|
+|  o+B=**=oE=     |
++----[SHA256]-----+
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ eval $(ssh-agent -s)
+Agent pid 800
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/German/.ssh/id_rsa (german.larcher@gmail.com)
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 228 bytes | 19.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:german1582/Repo_PrimGer.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
