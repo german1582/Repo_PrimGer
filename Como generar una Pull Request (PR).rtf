@@ -1,0 +1,342 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang10 Microsoft Windows [Versi\'f3n 10.0.17134.48]\par
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git brnach\par
+git: 'brnach' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+        branch\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git branch\par
+  integracion\par
+* pr_SFUT-1623\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git checkout integration\par
+error: pathspec 'integration' did not match any file(s) known to git\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git branch\par
+* integracion\par
+  pr_SFUT-1623\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git pull\par
+error: Pulling is not possible because you have unmerged files.\par
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'\par
+hint: as appropriate to mark resolution and make a commit.\par
+fatal: Exiting because of an unresolved conflict.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch integracion\par
+Your branch is up to date with 'origin/integracion'.\par
+\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+\par
+Unmerged paths:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+  (use "git add/rm <file>..." as appropriate to mark resolution)\par
+\par
+        deleted by us:   src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git reset HEAD\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git reset\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git reset HEAD src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git reset HEAD src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>GIT STATUS\par
+fatal: cannot handle STATUS as a builtin\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch integracion\par
+Your branch is up to date with 'origin/integracion'.\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        src/test/resources/features/app_TV/\par
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git pull\par
+git@cmprod.naranja.com.ar's password:\par
+Permission denied, please try again.\par
+git@cmprod.naranja.com.ar's password:\par
+Permission denied, please try again.\par
+git@cmprod.naranja.com.ar's password:\par
+Connection closed by 10.10.90.110 port 22\par
+fatal: Could not read from remote repository.\par
+\par
+Please make sure you have the correct access rights\par
+and the repository exists.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git config --global credential.helper cache\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>\par
+\par
+\par
+deberias actualizar el repo con:\par
+git pull\par
+despues:\par
+git branch feature/\{el numero de la task que creaste\}\par
+git checkout feature/\{el numero de la task que creaste\}\par
+git branch\par
+\par
+(te aseguras que estes en el branch)\par
+git status\par
+(ves cuales son los archivos modificados, probablemente hayas perdido el escenario y tengas que escribirlo de nuevo)\par
+git add (el archivo donde agregaste el escenario)\par
+git commit -m "(un mensaje en ingles de lo que hiciste bien breve)"\par
+git push\par
+German Larcher 15:58\par
+de diez!!\par
+Giuly Veizaga 15:59\par
+(ahi te va a decir que no se puede porque el branch no esta subido y te tira un comando)\par
+(deberias usar ese comando, tiene varias costias que nunca me acuerdo siempre hago ese camino jaj)\par
+bueno avisame si te trabas\par
+yo te conte todo porque no sabia bien que era lo que tenias duda ja\par
+despues en git te sale arriba que subiste un branch si queres hacer una merge request\par
+\par
+-------------------------------------------------------------------------------------------------------------------------\par
+\par
+Microsoft Windows [Versi\'f3n 10.0.17134.48]\par
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git pull\par
+git@cmprod.naranja.com.ar's password:\par
+Permission denied, please try again.\par
+git@cmprod.naranja.com.ar's password:\par
+Connection closed by 10.10.90.110 port 22\par
+fatal: Could not read from remote repository.\par
+\par
+Please make sure you have the correct access rights\par
+and the repository exists.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git pull\par
+remote: Enumerating objects: 404, done.\par
+remote: Counting objects: 100% (404/404), done.\par
+remote: Compressing objects: 100% (289/289), done.\par
+remote: Total 404 (delta 203), reused 211 (delta 99)\par
+Receiving objects: 100% (404/404), 114.12 KiB | 5.43 MiB/s, done.\par
+Resolving deltas: 100% (203/203), done.\par
+From cmprod.naranja.com.ar:branch-future/bf-webapp\par
+   53529601..d01e26b7  integracion             -> origin/integracion\par
+ * [new branch]        feature/SFUT-1007       -> origin/feature/SFUT-1007\par
+ * [new branch]        feature/SFUT-2133__browser-alert -> origin/feature/SFUT-2133__browser-alert\par
+ * [new branch]        feature/SFUT-2195       -> origin/feature/SFUT-2195\par
+ * [new branch]        fix/SFUT-2255           -> origin/fix/SFUT-2255\par
+ * [new branch]        fix/SFUT-2267           -> origin/fix/SFUT-2267\par
+ * [new branch]        fix/dni_duplicado_409   -> origin/fix/dni_duplicado_409\par
+ * [new branch]        release/1.5.0           -> origin/release/1.5.0\par
+ * [new tag]           desa-1.5.0-201906221135 -> desa-1.5.0-201906221135\par
+ * [new tag]           desa-1.5.0-201906231721 -> desa-1.5.0-201906231721\par
+ * [new tag]           release-1.5.0           -> release-1.5.0\par
+error: The following untracked working tree files would be overwritten by merge:\par
+        component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+Please move or remove them before you merge.\par
+Aborting\par
+Updating 53529601..d01e26b7\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git pull\par
+error: The following untracked working tree files would be overwritten by merge:\par
+        component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+Please move or remove them before you merge.\par
+Aborting\par
+Updating 53529601..d01e26b7\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch integracion\par
+Your branch is behind 'origin/integracion' by 21 commits, and can be fast-forwarded.\par
+  (use "git pull" to update your local branch)\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        src/test/resources/features/app_TV/\par
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git fetch -dry -run\par
+error: did you mean `--dry` (with two dashes ?)\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git fetch --dry -run\par
+error: unknown switch `r'\par
+usage: git fetch [<options>] [<repository> [<refspec>...]]\par
+   or: git fetch [<options>] <group>\par
+   or: git fetch --multiple [<options>] [(<repository> | <group>)...]\par
+   or: git fetch --all [<options>]\par
+\par
+    -v, --verbose         be more verbose\par
+    -q, --quiet           be more quiet\par
+    --all                 fetch from all remotes\par
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting\par
+    --upload-pack <path>  path to upload pack on remote end\par
+    -f, --force           force overwrite of local reference\par
+    -m, --multiple        fetch from multiple remotes\par
+    -t, --tags            fetch all tags and associated objects\par
+    -n                    do not fetch all tags (--no-tags)\par
+    -j, --jobs <n>        number of submodules fetched in parallel\par
+    -p, --prune           prune remote-tracking branches no longer on remote\par
+    -P, --prune-tags      prune local tags no longer on remote and clobber changed tags\par
+    --recurse-submodules[=<on-demand>]\par
+                          control recursive fetching of submodules\par
+    --dry-run             dry run\par
+    -k, --keep            keep downloaded pack\par
+    -u, --update-head-ok  allow updating of HEAD ref\par
+    --progress            force progress reporting\par
+    --depth <depth>       deepen history of shallow clone\par
+    --shallow-since <time>\par
+                          deepen history of shallow repository based on time\par
+    --shallow-exclude <revision>\par
+                          deepen history of shallow clone, excluding rev\par
+    --deepen <n>          deepen history of shallow clone\par
+    --unshallow           convert to a complete repository\par
+    --update-shallow      accept refs that update .git/shallow\par
+    --refmap <refmap>     specify fetch refmap\par
+    -o, --server-option <server-specific>\par
+                          option to transmit\par
+    -4, --ipv4            use IPv4 addresses only\par
+    -6, --ipv6            use IPv6 addresses only\par
+    --negotiation-tip <revision>\par
+                          report that we have only objects reachable from this object\par
+    --filter <args>       object filtering\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git branch\par
+* integracion\par
+  pr_SFUT-1623\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git branch features/SFUT-2268\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git checkout features/SFUT-2268\par
+Switched to branch 'features/SFUT-2268'\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git branch\par
+* features/SFUT-2268\par
+  integracion\par
+  pr_SFUT-1623\par
+:...skipping...\par
+* features/SFUT-2268\par
+  integracion\par
+  pr_SFUT-1623\par
+~\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch features/SFUT-2268\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        src/test/resources/features/app_TV/\par
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git add src/test/resources/features/app_TV/\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch features/SFUT-2268\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git addsrc/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+git: 'addsrc/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature' is not a git command. See 'git --help'.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch features/SFUT-2268\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git add src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git status\par
+On branch features/SFUT-2268\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+        new file:   src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git commit -m "Added a scenario regarding plastics and also the new feature about app TV"\par
+[features/SFUT-2268 b22d66d0] Added a scenario regarding plastics and also the new feature about app TV\par
+ Committer: German Larcher <E_GLARCHER@naranja.com.ar>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly. Run the\par
+following command and follow the instructions in your editor to edit\par
+your configuration file:\par
+\par
+    git config --global --edit\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 2 files changed, 620 insertions(+)\par
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV\par
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git push\par
+fatal: The current branch features/SFUT-2268 has no upstream branch.\par
+To push the current branch and set the remote as upstream, use\par
+\par
+    git push --set-upstream origin features/SFUT-2268\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git push -u origin master\par
+error: src refspec master does not match any\par
+error: failed to push some refs to 'git@cmprod.naranja.com.ar:branch-future/bf-webapp.git'\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git remote add origin git@cmprod.naranja.com.ar:branch-future/bf-webapp-bff.git\par
+fatal: remote origin already exists.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>git push\par
+fatal: The current branch features/SFUT-2268 has no upstream branch.\par
+To push the current branch and set the remote as upstream, use\par
+\par
+    git push --set-upstream origin features/SFUT-2268\par
+\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>    git push --set-upstream origin features/SFUT-2268\par
+Enumerating objects: 20, done.\par
+Counting objects: 100% (20/20), done.\par
+Delta compression using up to 8 threads\par
+Compressing objects: 100% (12/12), done.\par
+Writing objects: 100% (12/12), 3.69 KiB | 41.00 KiB/s, done.\par
+Total 12 (delta 5), reused 0 (delta 0)\par
+remote:\par
+remote: To create a merge request for features/SFUT-2268, visit:\par
+remote:   {{\field{\*\fldinst{HYPERLINK https://cmprod.naranja.com.ar/branch-future/bf-webapp/merge_requests/new?merge_request%5Bsource_branch%5D=features%2FSFUT-2268 }}{\fldrslt{https://cmprod.naranja.com.ar/branch-future/bf-webapp/merge_requests/new?merge_request%5Bsource_branch%5D=features%2FSFUT-2268\ul0\cf0}}}}\f0\fs22\par
+remote:\par
+To cmprod.naranja.com.ar:branch-future/bf-webapp.git\par
+ * [new branch]        features/SFUT-2268 -> features/SFUT-2268\par
+Branch 'features/SFUT-2268' set up to track remote branch 'features/SFUT-2268' from 'origin'.\par
+\par
+C:\\Automation-bf-webapp\\bf-webapp\\component-test\\bf-webapp-automation>\par
+}
+ 

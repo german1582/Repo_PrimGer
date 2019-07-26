@@ -1,0 +1,357 @@
+Microsoft Windows [Versión 10.0.17134.48]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git pull
+git@cmprod.naranja.com.ar's password:
+Permission denied, please try again.
+git@cmprod.naranja.com.ar's password:
+Connection closed by 10.10.90.110 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git pull
+remote: Enumerating objects: 404, done.
+remote: Counting objects: 100% (404/404), done.
+remote: Compressing objects: 100% (289/289), done.
+remote: Total 404 (delta 203), reused 211 (delta 99)
+Receiving objects: 100% (404/404), 114.12 KiB | 5.43 MiB/s, done.
+Resolving deltas: 100% (203/203), done.
+From cmprod.naranja.com.ar:branch-future/bf-webapp
+   53529601..d01e26b7  integracion             -> origin/integracion
+ * [new branch]        feature/SFUT-1007       -> origin/feature/SFUT-1007
+ * [new branch]        feature/SFUT-2133__browser-alert -> origin/feature/SFUT-2133__browser-alert
+ * [new branch]        feature/SFUT-2195       -> origin/feature/SFUT-2195
+ * [new branch]        fix/SFUT-2255           -> origin/fix/SFUT-2255
+ * [new branch]        fix/SFUT-2267           -> origin/fix/SFUT-2267
+ * [new branch]        fix/dni_duplicado_409   -> origin/fix/dni_duplicado_409
+ * [new branch]        release/1.5.0           -> origin/release/1.5.0
+ * [new tag]           desa-1.5.0-201906221135 -> desa-1.5.0-201906221135
+ * [new tag]           desa-1.5.0-201906231721 -> desa-1.5.0-201906231721
+ * [new tag]           release-1.5.0           -> release-1.5.0
+error: The following untracked working tree files would be overwritten by merge:
+        component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+Please move or remove them before you merge.
+Aborting
+Updating 53529601..d01e26b7
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git pull
+error: The following untracked working tree files would be overwritten by merge:
+        component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+Please move or remove them before you merge.
+Aborting
+Updating 53529601..d01e26b7
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch integracion
+Your branch is behind 'origin/integracion' by 21 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        src/test/resources/features/app_TV/
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch
+* integracion
+  pr_SFUT-1623
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch features/SFUT-2268
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git checkout features/SFUT-2268
+Switched to branch 'features/SFUT-2268'
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch
+* features/SFUT-2268
+  integracion
+  pr_SFUT-1623
+:...skipping...
+* features/SFUT-2268
+  integracion
+  pr_SFUT-1623
+~
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch features/SFUT-2268
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        src/test/resources/features/app_TV/
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git add src/test/resources/features/app_TV/
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch features/SFUT-2268
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+//probablemente en el siguiente comando se genero el error ya que falto el espacio entre add y el archivo.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git addsrc/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+git: 'addsrc/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature' is not a git command. See 'git --help'.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch features/SFUT-2268
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git add src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch features/SFUT-2268
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV
+        new file:   src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git commit -m "Added a scenario regarding plastics and also the new feature about app TV"
+[features/SFUT-2268 b22d66d0] Added a scenario regarding plastics and also the new feature about app TV
+ Committer: German Larcher <E_GLARCHER@naranja.com.ar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 620 insertions(+)
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/features/app_TV/implementacion_basica_de_la_app_TV
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git push
+fatal: The current branch features/SFUT-2268 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin features/SFUT-2268
+
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'git@cmprod.naranja.com.ar:branch-future/bf-webapp.git'
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git remote add origin git@cmprod.naranja.com.ar:branch-future/bf-webapp-bff.git
+fatal: remote origin already exists.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git push
+fatal: The current branch features/SFUT-2268 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin features/SFUT-2268
+
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>    git push --set-upstream origin features/SFUT-2268
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 3.69 KiB | 41.00 KiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote:
+remote: To create a merge request for features/SFUT-2268, visit:
+remote:   https://cmprod.naranja.com.ar/branch-future/bf-webapp/merge_requests/new?merge_request%5Bsource_branch%5D=features%2FSFUT-2268
+remote:
+To cmprod.naranja.com.ar:branch-future/bf-webapp.git
+ * [new branch]        features/SFUT-2268 -> features/SFUT-2268
+Branch 'features/SFUT-2268' set up to track remote branch 'features/SFUT-2268' from 'origin'.
+
+=================================================================
+//Aca empieza lo que se hizo nuevamente:
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git checkout integration
+error: pathspec 'integration' did not match any file(s) known to git
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch features/SFUT-2268
+Your branch is up to date with 'origin/features/SFUT-2268'.
+
+nothing to commit, working tree clean
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git checkout integracion
+Switched to branch 'integracion'
+Your branch is behind 'origin/integracion' by 21 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 1), reused 10 (delta 1)
+Unpacking objects: 100% (10/10), done.
+From cmprod.naranja.com.ar:branch-future/bf-webapp
+   7b5de9d2..b558f70c  feature/SFUT-2195 -> origin/feature/SFUT-2195
+   5b83f22a..e2f0306c  release/1.5.0     -> origin/release/1.5.0
+Updating 53529601..d01e26b7
+Fast-forward
+ .gitignore                                         |   1 +
+ component-test/bf-webapp-automation/pom.xml        | 222 ++-------
+ .../{user_interface => page}/ColaboradorPage.java  |   0
+ .../{user_interface => page}/LoginPage.java        |   2 +-
+ .../branchfuture/user_interface/Button.java        |   4 +
+ .../branchfuture/user_interface/GeneralList.java   |   8 -
+ .../src/test/resources/customers/Giuliana.json     |   0
+ .../direccionar_cliente_para_pagar_en_caja.feature | 241 ---------
+ .../gestion_de_la_demanda/gestor_de_turnos.feature | 552 +++++++++++++++++++++
+ .../test/resources/webdriver/linux/chromedriver    | Bin 0 -> 11892608 bytes
+ .../src/test/resources/webdriver/linux/geckodriver | Bin 0 -> 8724590 bytes
+ .../src/test/resources/webdriver/mac/chromedriver  | Bin 0 -> 14947256 bytes
+ .../src/test/resources/webdriver/mac/geckodriver   | Bin 0 -> 6091316 bytes
+ .../resources/webdriver/windows/IEDriverServer.exe | Bin 0 -> 3000832 bytes
+ .../resources/webdriver/windows/chromedriver.exe   | Bin 0 -> 8627712 bytes
+ .../resources/webdriver/windows/geckodriver.exe    | Bin 0 -> 11610143 bytes
+ package.json                                       |   8 +-
+ src/app/components/components.module.ts            |   7 +-
+ src/app/components/list/list.component.html        |   6 +-
+ src/app/components/list/list.component.scss        |   9 +-
+ src/app/components/list/list.component.spec.ts     |   7 +-
+ src/app/components/list/list.component.ts          |   7 +-
+ .../modal-customers-list.component.html            |   7 +-
+ .../modal-customers-list.component.scss            |   1 +
+ .../modal-customers-list.component.spec.ts         |  24 +-
+ .../modal-customers-list.component.ts              |  31 +-
+ .../components/twins-id/twins-id.component.html    |  15 +
+ .../components/twins-id/twins-id.component.scss    |  50 ++
+ .../components/twins-id/twins-id.component.spec.ts |  56 +++
+ src/app/components/twins-id/twins-id.component.ts  |  47 ++
+ .../user-queue-options.component.ts                |   2 +-
+ .../customer-identify.component.html               |   4 +-
+ .../customer-identify.component.ts                 |  66 ++-
+ .../customer-panel-data.component.ts               |  25 +-
+ .../customer-turn/customer-turn.component.ts       |  11 +-
+ src/app/models/customer-profile.model.ts           |   1 +
+ src/app/root-store/app/app.effects.ts              |  10 +-
+ .../customer-profile/customer-profile.reducer.ts   |   2 +
+ .../customer-propensity/propensity.actions.spec.ts |   7 +-
+ .../customer-propensity/propensity.actions.ts      |   4 +-
+ .../customer-propensity/propensity.effects.ts      |   4 +-
+ .../customer-propensity/propensity.reducer.spec.ts |   4 +-
+ .../customer-profile-turn.reducer.ts               |   2 +
+ .../customer-propensity/propensity.effects.ts      |   2 +-
+ .../customer-data/customer-data.service.spec.ts    |  12 +-
+ .../customer-data/customer-data.service.ts         |  45 +-
+ src/app/services/open-url.service.ts               |  19 +-
+ src/app/services/payment/payment.service.ts        |   4 +-
+ src/app/utils/list.utils.spec.ts                   |  35 ++
+ src/app/utils/list.utils.ts                        |  21 +
+ src/assets/i18n/es.json                            |   5 +-
+ src/tsconfig.compodoc.json                         |  26 +
+ 52 files changed, 1061 insertions(+), 555 deletions(-)
+ rename component-test/bf-webapp-automation/src/main/java/com/naranja/branchfuture/{user_interface => page}/ColaboradorPage.java (100%)
+ rename component-test/bf-webapp-automation/src/main/java/com/naranja/branchfuture/{user_interface => page}/LoginPage.java (75%)
+ create mode 100644 component-test/bf-webapp-automation/src/main/java/com/naranja/branchfuture/user_interface/Button.java
+ delete mode 100644 component-test/bf-webapp-automation/src/main/java/com/naranja/branchfuture/user_interface/GeneralList.java
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/customers/Giuliana.json
+ delete mode 100644 component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/direccionar_cliente_para_pagar_en_caja.feature
+ create mode 100644 component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/linux/chromedriver
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/linux/geckodriver
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/mac/chromedriver
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/mac/geckodriver
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/windows/IEDriverServer.exe
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/windows/chromedriver.exe
+ create mode 100755 component-test/bf-webapp-automation/src/test/resources/webdriver/windows/geckodriver.exe
+ create mode 100644 src/app/components/twins-id/twins-id.component.html
+ create mode 100644 src/app/components/twins-id/twins-id.component.scss
+ create mode 100644 src/app/components/twins-id/twins-id.component.spec.ts
+ create mode 100644 src/app/components/twins-id/twins-id.component.ts
+ create mode 100644 src/app/utils/list.utils.spec.ts
+ create mode 100644 src/app/utils/list.utils.ts
+ create mode 100644 src/tsconfig.compodoc.json
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch
+  features/SFUT-2268
+* integracion
+  pr_SFUT-1623
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch feature/SFUT-2268_new_scenario
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git checkout feature/SFUT-2268_new_scenario
+Switched to branch 'feature/SFUT-2268_new_scenario'
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git branch
+* feature/SFUT-2268_new_scenario
+  features/SFUT-2268
+  integracion
+  pr_SFUT-1623
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git status
+On branch feature/SFUT-2268_new_scenario
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git add src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature
+warning: LF will be replaced by CRLF in component-test/bf-webapp-automation/src/test/resources/features/gestion_de_la_demanda/gestor_de_turnos.feature.
+The file will have its original line endings in your working directory
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git commit -m "commit regarding SFUT-22668_new_scenario"
+[feature/SFUT-2268_new_scenario 8cb1514e] commit regarding SFUT-22668_new_scenario
+ Committer: German Larcher <E_GLARCHER@naranja.com.ar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>git push
+fatal: The current branch feature/SFUT-2268_new_scenario has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/SFUT-2268_new_scenario
+
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>    git push --set-upstream origin feature/SFUT-2268_new_scenario
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.03 KiB | 210.00 KiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0)
+remote:
+remote: To create a merge request for feature/SFUT-2268_new_scenario, visit:
+remote:   https://cmprod.naranja.com.ar/branch-future/bf-webapp/merge_requests/new?merge_request%5Bsource_branch%5D=feature%2FSFUT-2268_new_scenario
+remote:
+To cmprod.naranja.com.ar:branch-future/bf-webapp.git
+ * [new branch]        feature/SFUT-2268_new_scenario -> feature/SFUT-2268_new_scenario
+Branch 'feature/SFUT-2268_new_scenario' set up to track remote branch 'feature/SFUT-2268_new_scenario' from 'origin'.
+
+C:\Automation-bf-webapp\bf-webapp\component-test\bf-webapp-automation>
