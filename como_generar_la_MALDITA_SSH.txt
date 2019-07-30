@@ -1,3 +1,4 @@
+Ver Link: https://git-scm.com/book/es/v1/Git-en-un-servidor-Generando-tu-clave-pública-SSH
 
 German@DESKTOP-Q97CR3S MINGW64 /d/German/Mis Documentos/AUTOMATION/Practica GitHub/Repo_PrimGer (master)
 $ git status
